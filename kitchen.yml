@@ -1,0 +1,22 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: puppet_apply
+  manifests_path: spec/manifests
+  modules_path: .kitchen_modules
+  resolve_with_librarian_puppet: true
+
+platforms:
+  - name: windows-2016
+    driver:
+      box: mwrock/Windows2016
+
+verifier:
+  name: pester
+
+suites:
+  - name: default
+    provisioner:
+      manifest: default.pp
