@@ -2,16 +2,18 @@
 class windows_setup () {
   require chocolatey
 
-  $package_list = [
+  $chocolatey_package_list = [
     'virtualbox',
     'googlechrome',
     'vagrant',
     'docker',
     'vscode',
-    'git'
+    'git',
+    'firefox',
+    'visualstudio2017community'
   ]
 
-  package {$package_list:
+  package {$chocolatey_package_list:
     provider => chocolatey
   }
 }

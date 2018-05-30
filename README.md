@@ -11,3 +11,5 @@ This module performs a few basic operations to help any Windows developer get up
 - Vagrant
 - VirtualBox
 - Docker
+- Git
+- Visual Studio Community
