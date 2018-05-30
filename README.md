@@ -12,3 +12,4 @@ This module performs a few basic operations to help any Windows developer get up
 - VirtualBox
 - Docker
 - Git
+- Visual Studio Community
