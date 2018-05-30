@@ -1,0 +1,25 @@
+{
+  "name": "flaniga3-windows_setup",
+  "version": "0.1.0",
+  "author": "Joseph Flanigan",
+  "summary": "Performs a simple Windows setup, installing utilities and updating settings.",
+  "license": "Apache-2.0",
+  "source": "https://github.com/Flaniga3/puppet-windows_setup",
+  "project_page": "https://github.com/Flaniga3/puppet-windows_setup",
+  "dependencies": [
+    {
+      "name": "puppetlabs/chocolatey"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Windows"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.5.0 < 6.0.0"
+    }
+  ]
+}
