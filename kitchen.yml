@@ -1,6 +1,11 @@
 ---
 driver:
-  name: vagrant
+  name: ec2
+  security_group_ids: ["sg-025fa173"]
+  region: us-east-1
+  instance_type: t2.medium
+  retryable_sleep: 30
+  retryable_tries: 30
 
 provisioner:
   name: puppet_apply
@@ -11,7 +16,7 @@ provisioner:
 platforms:
   - name: windows-2016
     driver:
-      box: mwrock/Windows2016
+      image_id: ami-f0df538f
 
 verifier:
   name: pester
