@@ -1,0 +1,9 @@
+---
+windows_setup::ensure_virtualbox: present
+windows_setup::ensure_googlechrome: present
+windows_setup::ensure_vagrant: present
+windows_setup::ensure_docker: present
+windows_setup::ensure_vscode: present
+windows_setup::ensure_git: present
+windows_setup::ensure_firefox: present
+windows_setup::ensure_vscommunity: present
